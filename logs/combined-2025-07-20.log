@@ -1,0 +1,10 @@
+[2025-07-20T13:21:01.372Z] [INFO]: 🚀 Task Manager Backend running on port 3000
+[2025-07-20T13:21:01.375Z] [INFO]: Environment: development
+[2025-07-20T13:21:01.375Z] [INFO]: Health check: http://localhost:3000/health
+[2025-07-20T13:21:35.529Z] [HTTP]: POST /auth/signup {"requestId":"1753017695528recj3vs5i","ip":"::ffff:172.18.0.1","userAgent":"PostmanRuntime/7.44.1"}
+[2025-07-20T13:21:35.543Z] [INFO]: POST /signup {"requestId":"1753017695543p8v5rhdvd","ip":"::ffff:172.18.0.1","userAgent":"PostmanRuntime/7.44.1","body":{"name":"John Doe","email":"john@example.com","password":"password123"}}
+[2025-07-20T13:21:35.545Z] [INFO]: Starting user registration process {"requestId":"1753017695543p8v5rhdvd","email":"john@example.com"}
+[2025-07-20T13:21:35.723Z] [ERROR]: Signup error {"requestId":"1753017695543p8v5rhdvd","error":"Failed query: select \"id\", \"name\", \"email\", \"password\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2\nparams: john@example.com,1","stack":"Error: Failed query: select \"id\", \"name\", \"email\", \"password\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2\nparams: john@example.com,1\n    at NodePgPreparedQuery.queryWithCache (/app/node_modules/drizzle-orm/pg-core/session.cjs:67:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /app/node_modules/drizzle-orm/node-postgres/session.cjs:152:22"}
+[2025-07-20T13:25:50.276Z] [INFO]: 🚀 Task Manager Backend running on port 3000
+[2025-07-20T13:25:50.278Z] [INFO]: Environment: development
+[2025-07-20T13:25:50.279Z] [INFO]: Health check: http://localhost:3000/health
